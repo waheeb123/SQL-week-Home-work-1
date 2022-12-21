@@ -21,7 +21,7 @@ SELECT DISTINCT flight, origin, dest, distance AS 'furthest distance' FROM fligh
 
 4 Show the total number of flights by airline (carrier). 
 
-  SELECT carrier, COUNT(*) FROM flights GROUP BY carrier; Try it Yourself
+  SELECT carrier, COUNT(*) FROM flights GROUP BY carrier; 
  
 --------------
 
@@ -48,5 +48,5 @@ SELECT carrier, COUNT(*) AS FlightCount FROM flights GROUP BY carrier ORDER BY F
 Question: 
 Create a query that show top 5 airlines, by number of flights in the month of October, ordered by flights number from heights.  
 
- SELECT carrier, COUNT(*) as FlightCount FROM flights WHERE MONTH = 10 GROUP BY carrier ORDER BY FlightCount DESC LIMIT 5; Try it Yourself
+ SELECT carrier, COUNT(*) as FlightCount FROM flights WHERE MONTH = 10 GROUP BY carrier ORDER BY FlightCount DESC LIMIT 5; 
  
