@@ -2,7 +2,9 @@
 
 Which destination in the flights database is the furthest distance away, based on information in the flights table. Show the SQL query(s) that support your conclusion.  
 
- SELECT DISTINCT flight, origin, dest, distance AS 'furthest distance' FROM flights WHERE distance IN (select max(distance) from flights);
+ 
+SELECT DISTINCT flight, origin, dest, distance AS 'furthest distance' FROM flights WHERE distance IN (select max(distance) from flights);
+
  ------
 
 2 What are the different numbers of engines in the planes table? For each number of engines, which aircraft have the most number of seats? Show the SQL statement(s) that support your result. 
